@@ -1,0 +1,72 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+    <!-- Vendored libraries. Each is LibStub-versioned, so a second copy steps aside. -->
+    <Script file="Libs\LibStub\LibStub.lua"/>
+    <Script file="Libs\CallbackHandler-1.0\CallbackHandler-1.0.lua"/>
+    <Script file="Libs\HereBeDragons\HereBeDragons-2.0.lua"/>
+    <Script file="Libs\HereBeDragons\HereBeDragons-Pins-2.0.lua"/>
+    <Script file="Libs\ChatThrottleLib\ChatThrottleLib.lua"/>
+    <Script file="Libs\LibDeflate\LibDeflate.lua"/>
+    <Script file="Libs\LibSerialize\LibSerialize.lua"/>
+
+    <!-- Claims the version, and marks this copy as the one loading. -->
+    <Script file="Lib.lua"/>
+    <Script file="Errors.lua"/>
+
+    <!-- Pure modules: no WoW API, covered by the LuaJIT test suite. -->
+    <Script file="Coords.lua"/>
+    <Script file="Schema.lua"/>
+    <Script file="Provenance.lua"/>
+    <Script file="Codec.lua"/>
+    <Script file="Resolve.lua"/>
+    <Script file="ItemCache.lua"/>
+    <Script file="Bags.lua"/>
+    <Script file="Reward.lua"/>
+    <Script file="HardQuest.lua"/>
+    <Script file="HardList.lua"/>
+    <Script file="HardLog.lua"/>
+    <Script file="Plays.lua"/>
+    <Script file="Fields.lua"/>
+    <Script file="MapReveal.lua"/>
+    <Script file="MailWatch.lua"/>
+    <Script file="Pool.lua"/>
+    <Script file="ClaimLog.lua"/>
+    <Script file="OfficerClaims.lua"/>
+    <Script file="Authority.lua"/>
+    <Script file="Crypto.lua"/>
+    <Script file="X25519.lua"/>
+    <Script file="Ed25519.lua"/>
+    <Script file="Roles.lua"/>
+    <Script file="OfferSig.lua"/>
+    <Script file="Summary.lua"/>
+    <Script file="Router.lua"/>
+    <Script file="Entropy.lua"/>
+
+    <Script file="Transport\Framing.lua"/>
+    <Script file="Transport\Channel.lua"/>
+    <Script file="Transport\Export.lua"/>
+    <Script file="Transfer.lua"/>
+    <Script file="Keys.lua"/>
+
+    <Script file="Spokes\Adapter.lua"/>
+    <Script file="Spokes\Registry.lua"/>
+
+    <!-- The shared surface, then what builds on it. -->
+    <Script file="Surface.lua"/>
+    <Script file="MailBody.lua"/>
+    <Script file="Mailbox.lua"/>
+    <Script file="Net.lua"/>
+    <Script file="RoleSync.lua"/>
+    <Script file="MailTabs.lua"/>
+    <Script file="ListPanel.lua"/>
+
+    <Script file="Spokes\Details.lua"/>
+    <Script file="Spokes\Questie.lua"/>
+    <Script file="Spokes\BigWigs.lua"/>
+    <Script file="Spokes\SpellCoda.lua"/>
+    <Script file="Spokes\Auctionator.lua"/>
+    <Script file="Spokes\Syndicator.lua"/>
+    <Script file="Spokes\MobInfo2.lua"/>
+    <Script file="Spokes\GRM.lua"/>
+
+    <Script file="LibEnd.lua"/>
+</Ui>

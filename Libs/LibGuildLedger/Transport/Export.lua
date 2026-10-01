@@ -1,0 +1,8 @@
+-- Copy-paste transport, for when the recipient is not online.
+--
+-- Guild addon messages only reach players who are logged in at that moment, and nothing
+-- is queued for anyone else, so without this an officer being offline means the data
+-- simply cannot be handed over. Print encoding costs about a third more bytes than the
+-- channel encoding but survives any clipboard, chat client or forum post.
+-- Dev only: only the dev addon, the mock renderer and the tests use this, so the shipped
+-- addon leaves it out (tools/build-production.lua drops dev regions). The source keeps it.

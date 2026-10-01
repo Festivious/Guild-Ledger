@@ -1,0 +1,5 @@
+package-as: GuildLedger_Guild
+
+ignore:
+  - .github
+  - README.md

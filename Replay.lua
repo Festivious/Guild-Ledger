@@ -1,0 +1,17 @@
+-- Turns one episode into something plottable. Pure: no WoW API, no drawing.
+--
+-- The path is the position samples in the order they happened. Everything else is an
+-- event pinned to a place on that path.
+--
+-- Two honesty rules shape this:
+--
+--   Coordinates are per-map. A session that crosses zones is several plots, never one:
+--   0.48,0.40 in Elwynn and 0.48,0.40 in Westfall are different places on earth, and
+--   drawing them on one canvas would be a lie about where somebody went.
+--
+--   Events without a coordinate of their own - dropping to low health, levelling, a skill
+--   going up - are placed at the last position actually observed, and marked as inferred.
+--   The player was somewhere between two samples and we do not know where. Saying "near
+--   here" is honest; drawing it as a fix is not.
+-- Dev only: only the dev addon, the mock renderer and the tests use this, so the shipped
+-- addon leaves it out (tools/build-production.lua drops dev regions). The source keeps it.

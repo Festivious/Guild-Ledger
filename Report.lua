@@ -1,0 +1,12 @@
+-- The officer view's numbers. Pure: no WoW API, no spoke calls, no formatting.
+--
+-- This is a diagnostic, not a statistics page. An officer opens it to find where a
+-- player's time is going wrong and have one specific conversation about it, so every
+-- figure here has to survive the question "and what would you say to them about that?".
+--
+-- Scope is ONE OBSERVER, across every session they have contributed. Per-session detail
+-- is deliberately not here: the fold drops the session on purpose, and a session worth
+-- looking at in full is a session somebody pinned. This is the aggregate; the pin is the
+-- story.
+-- Dev only: only the dev addon, the mock renderer and the tests use this, so the shipped
+-- addon leaves it out (tools/build-production.lua drops dev regions). The source keeps it.

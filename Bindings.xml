@@ -1,0 +1,5 @@
+<Bindings>
+    <Binding name="GUILDLEDGER_ANALYTICS" header="GUILDLEDGER" category="ADDONS">
+        GuildLedger_ToggleAnalytics()
+    </Binding>
+</Bindings>

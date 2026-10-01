@@ -1,0 +1,36 @@
+## Interface: 11509
+## Title: Guild Ledger: Bounties and Analytics |cff00d1ff(Officers)|r
+## Notes: For officers: post bounties, hold and read the guild's sessions.
+## Author: Christopher
+## Version: 0.3.0-alpha
+## SavedVariablesPerCharacter: GuildLedgerDB
+## SavedVariables: GuildLedgerGuildDB, GuildLedgerAccountDB
+## X-Category: Data
+## X-Curse-Project-ID: 1715427
+
+# The shared library, embedded. Made from LibGuildLedger/ by tools/sync-lib.lua.
+Libs\LibGuildLedger\LibGuildLedger.xml
+
+# The whole member addon, first: an officer installs this addon alone. Made from
+# Interface/AddOns/GuildLedger by tools/sync-lib.lua, in that addon's TOC order.
+Client\Client.xml
+
+# The corpus and its reports, which only the guild side uses.
+Merge.lua
+MergeKey.lua
+Dedupe.lua
+Corpus.lua
+Report.lua
+Replay.lua
+
+Offers.lua
+HardSwitches.lua
+AwardFlow.lua
+IconPicker.lua
+OfferComposer.lua
+Guild.lua
+Vault.lua
+RoleAdmin.lua
+VaultTab.lua
+Analytics.lua
+OfficerViews.lua
